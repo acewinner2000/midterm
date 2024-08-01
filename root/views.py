@@ -1,7 +1,7 @@
 from django.shortcuts import render
-from .models import Serivces
+from .models import Services
 
 
 def home(request):
-    services=Serivces.objects.filter(status=True)
-    return render(request,'root/index.html',context={'services':Serivces})
+    services=Services.objects.filter(status=True)
+    return render(request,'root/index.html',context={'services':Services})
