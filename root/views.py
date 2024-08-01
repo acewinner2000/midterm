@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from .models import Services
+from .models import *
 
 
 def home(request):
